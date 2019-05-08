@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Node.js RESTful courses service</title>
+</head>
+ 
+<body>
+    <form action="http://localhost:3002/students" method="post">
+		<div>
+			<label>Add a new student:</label>
+			<br/>
+			<label for="id">ID</label>
+			<input type="number" name="id">
+			<label for="name">Name</label>
+			<input type="text" name="name">
+			<input type="submit">
+		</div>
+    </form>
+	
+	<br/>
+			
+	<form action="http://localhost:3002/enrolments" method="post">
+		<div>
+			<label>Enroll a student to a course</label>
+			<br/>
+			<label for="student_id">Student ID</label>
+			<input type="number" name="student_id">
+			<label for="course_id">Course ID</label>
+			<input type="number" name="course_id">
+			<input type="submit">
+		</div>
+	</form>
+</body>
+ 
+</html>
